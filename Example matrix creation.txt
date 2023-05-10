@@ -1,0 +1,13 @@
+import pandas as pd
+# Create the matrix
+data = [[4, 4, -15, -10, 0, 0, 0, 0, 0],
+        [0, 0, 15, 10, 0, -6, -6, 0, 0],
+        [4, 4, 0, 0, 0, -6, -6, 0, 0],
+        [0, 0, 15, 0, 5, 0, 0, -7, -7]]
+row_names = ['e1', 'e2', 'e3', 'e4']
+col_names = pd.MultiIndex.from_tuples([('V1', 'ML'), ('V1', 'R'), ('V2', 'ML'), ('V2', 'R'), 
+                                       ('V2', 'BD'), ('V3', 'ML'), ('V3', 'R'), ('V4', 'ML'), ('V4', 'BD')])
+df = pd.DataFrame(data, index=row_names, columns=col_names)
+
+# Print the matrix
+print(df)
