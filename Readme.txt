@@ -8,3 +8,6 @@ We combined the dictinoary of edge list with the vertex and the scores according
 
 
 Then we created the matrix for smaller size co-boundary matrix for the smaller graph created
+
+
+#networkx 
